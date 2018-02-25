@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Disney Trivia</title>
+    <link rel="icon"  type="image/png" href="assets/images/mickey-mouse.ico">
+    <link href="https://fonts.googleapis.com/css?family=Mouse+Memoirs" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+		<!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    	<!-- CSS files -->
+	<link rel="stylesheet" type="text/css" href="https://bootstrapdocs.com/v3.3.6/docs/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Magical Disney Trivia</h1>
+		<div class="page1">
+			<button type="button" class="btn btn-default btn-lg" id="start">Let's Get Started</button>
+		</div>
+		<div class="page2">
+			<form>
+				<h3>What movie did Mickey Mouse first make a sound?</h3>
+					<input type="radio" name="make-sound" value="steamboat"> Steamboat Willie<br>
+  					<input type="radio" name="make-sound" value="karnival"> The Karnival Kid<br>
+  					<input type="radio" name="make-sound" value="Fantasia"> Fantasia<br>
+  				<h3>What was the price of the first Disneyland Admission Ticket?</h3>
+					<input type="radio" name="first-tix" value="3-dol"> $3.40<br>
+  					<input type="radio" name="first-tix" value="1-dol"> $1.00<br>
+  					<input type="radio" name="first-tix" value="2-dol"> $2.50<br>
+  				<h3>Which of these cities was the first international location for a Disneyland Park?</h3>
+					<input type="radio" name="intl" value="paris"> Paris<br>
+  					<input type="radio" name="intl" value="tokyo"> Tokyo <br>
+  					<input type="radio" name="intl" value="amster"> Amsterdam<br>
+  				<!-- Submit button for when time doesn't run out -->
+  				<button type="button" class="btn btn-default btn-lg" id="done">Done</button>
+			</form>
+			
+		</div>
+		<div class="page3">
+			<h3>Let's Look at These Results</h3>
+			<p id="correct">Correct Answers: </p>
+			<p id="incorrect">Incorrect Answers: </p>
+			<p id="blank">Unaswered: </p>
+		</div>
+		
+	</div>
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>
