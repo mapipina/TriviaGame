@@ -18,3 +18,7 @@ h1 {
 .page2, .page3 {
 	display: none;
 }
+
+.submit {
+	margin: 10px;
+}
