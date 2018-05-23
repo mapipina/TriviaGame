@@ -3,20 +3,21 @@ $(document).ready(function(){
     $("#start").click(function(){
         $(".page2").toggle();
         $("#start").toggle();
+    //one of the last things I'm doing is creating timer
+        var count = 31;
+        var counter = setInterval(timer, 1000); //1000 will  run it every 1 second
+        function timer(){
+            count = count-1;
+            if (count <= 0) {
+                clearInterval(counter);
+                $("#done").click();
+                return;
+            }
+            $("#timer").html('Time Remaining: ' + count + ' Seconds');
+         };
     });
 
-    //one of the last things I'm doing is creating timer
-    var count = 31;
-    var counter = setInterval(timer, 1000); //1000 will  run it every 1 second
-    function timer(){
-        count = count-1;
-        if (count <= 0) {
-            clearInterval(counter);
-            $("#done").click();
-            return;
-        }
-        $("#timer").html('Time Remaining: ' + count + ' Seconds');
-     };
+
     // have the timer show on load
   // $(".page2").load().timer();
 
